@@ -4,10 +4,10 @@
     id        = "com.phonegap.example"
     version   = "1.0.0">
 
-<name>Velomarche</name>
+<name>Velomarche APP</name>
 
 <description>
-Biciclette
+Biciclette Mia
 </description>
 
 <author href="http://www.lineanet.it" email="info@station.it">
@@ -87,6 +87,7 @@ Linea Computers srl
 
         Otherwise, you can specify specific domains:
     -->
+	<!--
     <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
     <!--
         <access origin="http://phonegap.com" />                    - allow any secure requests to http://honegap.com/
