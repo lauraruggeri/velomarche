@@ -31,7 +31,7 @@
 
 
 <script src="cordova.js"></script>
-
+<script src="childbrowser.js"></script>
 
 
 <script src="scripts/jquery.min.js"		type="text/javascript"></script>
@@ -62,7 +62,9 @@ function onLoad() {
 // Called when Cordova is fully loaded (and calling to Cordova functions has become safe)
 function onDeviceReady() {
     
-    //navigator.notification.alert('Phonegap work');  
+    navigator.notification.alert('Phonegap work');  
+	//window.plugins.childBrowser.showWebPage("http://www.google.com", { showLocationBar: true });
+	window.plugins.childBrowser.openExternal("http://www.google.com");
 }
 
 function loadUrl() {
