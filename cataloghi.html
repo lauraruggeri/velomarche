@@ -53,6 +53,8 @@
 function onLoad() {
     
     document.addEventListener("deviceready", onDeviceReady, false);
+	
+	$(".link").bind("click", loadUrl); 
       
    
 }
@@ -60,7 +62,14 @@ function onLoad() {
 // Called when Cordova is fully loaded (and calling to Cordova functions has become safe)
 function onDeviceReady() {
     
-    navigator.notification.alert('Phonegap work');  
+    //navigator.notification.alert('Phonegap work');  
+}
+
+function loadUrl() {
+    var url = $(this).attr("rel");
+	//navigator.notification.alert(url);  
+	navigator.app.loadUrl(url, { openExternal:true });
+    
 }
  
  </script>
@@ -104,7 +113,7 @@ function onDeviceReady() {
            <!-- <div class="column iphone-detected no-detected-background">
                   -->
                   
-                  <a href="http://www.station.it/velomarche/vintage2013.pdf">vintage2013.pdf</a>
+                  <a  href="#" class="link" rel='http://www.station.it'>vintage2013.pdf</a>
                  
                     <a href="http://www.station.it/velomarche/vintage2013.pdf" rel="external" data-ajax="false" target="_blank" > 
                     	<img src="images/misc/100.png"   alt="img">
