@@ -62,8 +62,8 @@ function onLoad() {
 // Called when Cordova is fully loaded (and calling to Cordova functions has become safe)
 function onDeviceReady() {
     
-    navigator.notification.alert('Phonegap work');  
-	//window.plugins.childBrowser.showWebPage("http://www.google.com", { showLocationBar: true });
+    //navigator.notification.alert('Phonegap work');  
+	window.plugins.childBrowser.showWebPage("http://www.google.com", { showLocationBar: true });
 	//window.plugins.childBrowser.openExternal("http://www.google.com");
 }
 
@@ -74,6 +74,7 @@ function loadUrl() {
 	
       //navigator.app.loadUrl(url, { openExternal:true });
       //navigator.app.loadUrl("file:///android_asset/index.html")
+	  window.plugins.childBrowser.showWebPage("http://www.google.com", { showLocationBar: true });
 	
     
 }
