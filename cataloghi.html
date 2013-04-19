@@ -69,12 +69,8 @@ function loadUrl() {
     var url = $(this).attr("rel");
 	//navigator.notification.alert(url);  
 	
-	if (app.isAndroid()) {
-      navigator.app.loadUrl(url, { openExternal:true });
-    } else {
-      window.location.href = url;
-    }
-	
+	navigator.app.loadUrl(url, { openExternal:true });
+    
 	
     
 }
@@ -121,7 +117,7 @@ function loadUrl() {
                   -->
                   
                   <a  href="#" class="link" rel='http://www.station.it/index.html'>vintage2013.pdf web</a>
-                  <a  href="#" class="link" rel='cataloghi/vintage2013.pdf'>vintage2013.pdf local</a>
+                 
                  
                     <a href="http://www.station.it/velomarche/vintage2013.pdf" rel="external" data-ajax="false" target="_blank" > 
                     	<img src="images/misc/100.png"   alt="img">
