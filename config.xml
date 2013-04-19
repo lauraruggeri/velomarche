@@ -88,7 +88,7 @@ Linea Computers srl
         Otherwise, you can specify specific domains:
     -->
 	
-	 <access origin="*" /> 
+	<access origin="*" browserOnly="true" />
 	<!--
     <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
     <!--
