@@ -25,6 +25,7 @@ jQuery(document).ready(function($) {
 	// submit form data starts	   
     function submitData(currentForm, formType){     
 		formSubmitted = 'true';		
+<<<<<<< HEAD:scripts/contact.js
 		var formInput = $('#' + currentForm).serialize();
 		
 		var mail =$('#contactEmailField').val();
@@ -52,11 +53,17 @@ jQuery(document).ready(function($) {
 				}
 			});
 		/*	
+=======
+		var formInput = $('#' + currentForm).serialize();		
+>>>>>>> mod 1:assets/www/scripts/contact.js
 		$.post($('#' + currentForm).attr('action'),formInput, function(data){			
 			$('#' + currentForm).hide();
 			$('#formSuccessMessageWrap').fadeIn(500);			
 		});
+<<<<<<< HEAD:scripts/contact.js
 		*/
+=======
+>>>>>>> mod 1:assets/www/scripts/contact.js
 
 	};
 	// submit form data function starts	
@@ -92,6 +99,7 @@ jQuery(document).ready(function($) {
 	// validate form function ends	
 	
 	// contact button function starts
+<<<<<<< HEAD:scripts/contact.js
 	$('#contactSubmitButton').click(function() {	
 		validateForm($(this).attr('data-formId'));	
 	    return false;		
@@ -99,6 +107,18 @@ jQuery(document).ready(function($) {
 	// contact button function ends
 	
 	
+=======
+	/*$('#contactSubmitButton').click(function() {	
+		validateForm($(this).attr('data-formId'));	
+	    return false;		
+	});*/
+	// contact button function ends
+	
+	$('#contactSubmitButton').click(function() {	
+		alert("click");
+	    return false;		
+	});
+>>>>>>> mod 1:assets/www/scripts/contact.js
 	
 	
 	
